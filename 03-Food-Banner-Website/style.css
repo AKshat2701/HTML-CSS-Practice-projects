@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+main
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    .image_container
+    {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        img
+        {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content
+    {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .burger
+        {
+            position: absolute;
+            top: 20%;
+            left: 12%;
+        }
+
+        .tomato-1
+        {
+            position: absolute;
+            top: 60%;
+            left: 10%;
+        }
+
+        .tomato-2
+        {
+            position: absolute;
+            top: 35%;
+            right: 15%;
+        }
+
+        .pizza
+        {
+            position: absolute;
+            top: 56%;
+            right: 15%;
+        }
+
+        .momo
+        {
+            position: absolute;
+            top: 6%;
+            right: 15%;
+        }
+
+        .leaf
+        {
+            position: absolute;
+            top: 12%;
+            left: 28%;  
+        }
+
+        .text-content
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+
+            h1
+            {
+                font-size: 64px;
+                line-height: 60px;
+                margin-bottom: 40px;
+                color: #ca0306;
+            }
+
+            p
+            {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bold;
+                text-align: center;
+                margin: 0 auto;
+                max-width: 450px;
+
+            }
+        }
+
+        .info-section
+        {
+            display: flex;
+            margin-top: 120px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 8px 23px black;
+            border: 1px solid rgb(155, 154, 154);
+
+            .info-item
+            {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .info-icon 
+                {
+                    height: 50px;
+                    width: 50px;
+                    object-fit: contain;
+                }
+
+                .info-text
+                {
+                    display: flex;
+                    flex-direction: column;
+
+                    .info-number
+                    {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #ca0306;
+                    }
+
+                    .info-label
+                    {
+                        font-size: 16px;
+                        color: black;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+        }
+    }
+}
