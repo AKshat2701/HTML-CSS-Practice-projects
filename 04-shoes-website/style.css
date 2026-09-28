@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main
+{
+    padding-top: 40px;
+    display: flex;
+    gap: 16px;
+    max-width: 1174px;
+    margin: 0 auto;
+
+    .images_section
+    {
+        display: flex;
+        gap: 16px;
+
+        aside
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+
+        h1
+        {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        h2 
+        {
+            font-size: 20px;
+            color: rgba(0,0,0,0.5);
+            font-weight: 600;
+        }
+        .content_header
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .green-text
+            {
+                color: #29aa04;
+                font-weight: 600;
+                font-size: 24px;
+            }
+        }
+
+        .price_section
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+
+            h2 
+            {
+                font-size: 24px;
+                font-weight: 600;
+                color: black;
+            }
+
+            p
+            {
+                font-size: 16px;
+                font-weight: 600;
+                color: rgba(0,0,0,0.5);
+            }
+        }
+
+        .size_section
+        {
+            .sizeheader
+            {
+                display: flex;
+                justify-content: space-between;
+                h4 
+                {
+                    font-size: 20px;
+                    margin-bottom: 24px;
+                    margin-top: 48px;
+                }
+            }
+            .sizes
+            {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                margin-bottom: 40px;
+
+                .size
+                {
+                    border: 1px solid rgba(0,0,0);
+                    padding: 12px 16px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .button_container
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            button
+            {
+                padding: 20px;
+                border: none;
+                border-radius: 50px;
+                font-size: 20px;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover
+                {
+                    opacity: 0.6;
+                }
+                &:first-child{
+                    background-color: #000;
+                    color: white;
+                }
+                &:last-child
+                {
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
