@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body
+{
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f7f3f3;
+}
+
+
+main
+{
+    padding: 20px;
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: calc(100vh);
+
+    .sidebar 
+    {
+        background-color: white;
+        width: 300px;
+        border-radius: 20px;
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        
+        h1 
+        {
+            font-size: 27px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        hr 
+        {
+            border: none;
+            border-top: 1px solid rgba(1, 1, 1, 0.3);
+
+            margin-bottom: 16px;
+        }
+
+        .sidebar-top 
+        {
+            display: flex;
+            justify-content: space-between;
+
+            .new-chat-btn 
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                background-color: #a300e4;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 4px 8px;
+                font-size: 12px;
+                cursor: pointer;
+                margin-bottom: 3px;
+
+                img 
+                {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .search-icon
+            {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+        }
+
+        .chat-history 
+        {
+           
+            overflow-y: auto;
+            margin-top: 8px;
+            
+            .chat-item
+            {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            &:hover 
+            {
+                background-color: rgba(0,0,0,0.05);
+            }
+            img 
+            {
+                width: 24px;
+                height: 24px;
+            }
+            span 
+            {
+                font-size: 12px;
+                font-weight: 400;
+                color: black;
+            }
+            }
+        }
+    }
+
+    .chat-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 912px;
+        margin: 0 auto;
+        padding-top: 55px;
+
+        .messages
+        {
+            .user-message 
+            {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                img 
+                {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                }
+            }
+
+            .ai-message 
+            {
+                margin-left: 56px;
+                p 
+                {
+                    font-size: 16px;
+                    font-weight: bold ;
+                    color: black;
+                    margin-bottom: 1px;
+                }
+
+                ol 
+                {
+                    margin-left: 20px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: black;
+                }
+            }
+        }
+
+        .input-container
+        {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 32px;
+            padding: 0;
+            min-height: 190px;
+            box-shadow: 0px 0px 4px 0px rgba(1,1,1, 0.25);
+
+            input 
+            {
+                flex: 1 ;
+                border: none;
+                padding: 32px 40px;
+                font-size: 20px;
+                background-color: transparent;
+
+                &::placeholder 
+                {
+                    color: black;
+                }
+
+            }
+
+            button 
+            {
+                position: absolute;
+                bottom: 20px ;
+                right: 20px;
+                height: 50px;
+                width: 50px;
+                background-color: red;
+                border: none;
+                border-radius: 32px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img 
+            {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
