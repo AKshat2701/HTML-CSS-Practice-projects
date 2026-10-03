@@ -1,0 +1,49 @@
+@media only screen and (min-width : 200px ) and (max-width: 575px) 
+{
+    header 
+    {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .headerLeft 
+    {
+        justify-content: center;
+    }
+
+    .logo
+    {
+        padding: 10px;
+    }
+
+    .headerAddress 
+    {
+        padding: 10px;
+    }
+
+    .headerAddress p 
+    {
+        font-size: 12px;
+    }
+
+    .headerAddress h3 
+    {
+        font-size: 15px;
+    }
+
+    .searchBox button 
+    {
+        padding: 10px;
+    }
+
+    .headerBtn 
+    {
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0;
+    }
+}
