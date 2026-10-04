@@ -45,5 +45,48 @@
         justify-content: center;
         width: 100%;
         margin-right: 0;
+        background-color: white;
+    }
+
+    .bannerSection 
+    {
+        display: none;
+    }
+
+    .orderBanner 
+    {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .categoryItems 
+    {
+        flex-basis: 25%;
+    }
+
+    .productItems
+    {
+        flex-basis: 49%;
+    }
+
+    .productSection
+    {
+        padding: 30px 10px;
+    }
+
+    .footer 
+    {
+        padding-top: 0;
+    }
+
+    .footer-mid-row1 
+    {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .usefulLinks li
+    {
+        flex-basis: 48%;
     }
 }
