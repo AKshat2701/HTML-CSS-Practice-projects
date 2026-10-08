@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main 
+{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor 
+{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(232, 221, 221);
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;
+}
+
+h1 
+{
+    font-size: 9vw;
+    font-weight: 900;
+
+}
