@@ -60,6 +60,9 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
 }
 
 nav button 
@@ -85,6 +88,7 @@ section
 section .task-column
 {
     flex-grow: 1;
+    width: 100%;
     background-color: var(--bg-button-color);
     display: flex;
     flex-direction: column;
@@ -140,10 +144,15 @@ section .task-column .task button
     width: 100vw;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
+}
+
+.modal.active
+{
+    display: flex;
 }
 
 .modal .bg 
@@ -152,6 +161,7 @@ section .task-column .task button
     height: 100%;
     width: 100%;
     background-color: rgba(61, 65, 65, 0.681);
+    backdrop-filter: blur(3px);
 }
 
 .modal .center
@@ -175,13 +185,15 @@ section .task-column .task button
     border-radius: var(--border-radius-s);
 }
 
-.modal .centr button 
+.modal .center button 
 {
-    background-color: var(--bg-button-color);
+    background-color: var(--bg-task-color);
     border: none;
     outline: none;
     color: var(--primary-text-color);
     padding: var(--padding-m) var(--padding-l);
     cursor: pointer;
     border-radius: var(--border-radius-m);
+    width: fit-content;
+    align-self: center;
 }
